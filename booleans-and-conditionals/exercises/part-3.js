@@ -35,8 +35,7 @@ if(commandOverride)
 {
     console.log("The shuttle is launched");
 }
-else
-{
+else{
    console.log("The shuttle should be launched after the fuel");
 }
 /* 6) b) Code the following if/else check:
