@@ -31,7 +31,7 @@ if (shuttleSpeed > 17500) {
     console.log("ALERT: Cannot maintain orbit");
  } else {
     console.log("Stable speed");
- }
+}
 
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
