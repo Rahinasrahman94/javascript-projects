@@ -36,6 +36,9 @@ if (shuttleSpeed > 17500) {
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
 //console.log("/* "Yes" or "No" */");
+console.log("all systems go");
+console.log("all systems go");
+
 //console.log("yes");
 //console.log("no");
 
