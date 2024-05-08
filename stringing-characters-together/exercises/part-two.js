@@ -34,7 +34,6 @@ console.log("CAT gene found");
 else{
     console.log("CAT gene NOT found"); 
 }
-
 //3) Use .slice() to print out the fifth gene (set of 3 characters) from the DNA strand.
 console.log(dna.slice(16,19));
 //4) Use a template literal to print, "The DNA strand is ___ characters long."
