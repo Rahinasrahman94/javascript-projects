@@ -48,8 +48,23 @@ function askForNumber() {
 
 function generatePassword(string1, string2) {
   let code = '';
+  let codelength = 0;
   let Firststring = input.question("Enter the First String");
-  
+  let Secondstring = input.question("Enter the Second String");
+  let FirstStringLenth = Firststring.length;
+  let SecondStringLenth = Secondstring.length;
+  if(FirstStringLenth>SecondStringLenth)
+    {
+      codelength  = FirstStringLenth;
+    }
+else{
+             codelength=SecondStringLenth;
+}
+for(let i=0;i<codelength;i++)
+  {
+    code = code +Firststring[i]+Secondstring[i];
+  }
+
 
 
   /// Code your Bonus Mission Solution here ///
@@ -78,10 +93,10 @@ console.log(meals)
     /// TEST PART C HERE ///
   /// UNCOMMENT the remaining commented lines and change the password1 and password2 strings to ensure your code is doing its job ///
 
-  // let password1 = '';
-  // let password2 = '';
-  // console.log("Time to run the password generator so we can update the menu tomorrow.")
-  // console.log(`The new password is: ${generatePassword(password1, password2)}`);
+  let password1 = '';
+   let password2 = '';
+   console.log("Time to run the password generator so we can update the menu tomorrow.")
+  console.log(`The new password is: ${generatePassword(password1, password2)}`);
 }
 
 module.exports = {
