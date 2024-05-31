@@ -39,16 +39,20 @@ function sortArray(arr)
 let j=0;
 function sorting(arr)
 {
+  let d=0;
   let sortArray = [];
   if(arr.length <= 1)
     {
-      sortArray[j++] = arr;
+      sortArray[j] = arr;
       return sortArray;
     }
     else{
-    sortArray[j++]= findMinValue(arr);
-    const index = arr.indexOf(findMinValue(arr));
-    const x = arr.splice(index, 1);
+     
+      d=findMinValue(arr);
+      sortArray.push(d,'');
+     const index =arr.indexOf(findMinValue(arr));
+     const x = arr.splice(index, 1);
+ 
     return sortArray + sorting(arr);
     }
 }
