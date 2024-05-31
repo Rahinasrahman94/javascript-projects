@@ -4,7 +4,20 @@
 let nums1 = [5, 10, 2, 42];
 let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
 let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
-
+//console.log(Math.min(nums1));
 //Using one of the test arrays as the argument, call your function inside the console.log statement below.
+let smallest = function(arr)
+{
+    let minimum = 253;
+   for(let index=0;index<arr.length;index++)
+    {
+        if(arr[index]<minimum)
+            {
+                minimum = arr[index];
+            }
 
-console.log(/* your code here */);
+    }
+
+return minimum;
+};
+console.log(smallest(nums1));
